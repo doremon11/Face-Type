@@ -1,0 +1,27 @@
+Let’s look at some observations about the data we are storing:
+
+The service needs to store 100 -1000 records .
+
+The service is somewhat heavy.
+
+Each object is small like (<10).
+
+There are no relationships between each record, except for storing which user created the short link.
+
+Schema:
+
+We’ll now consider database schemas. We need a table for storing information.
+The best choice would be to use a NoSQL database store like DynamoDB or Cassandra since we are storing billions of rows with no relationships between the objects.
+
+
+1)Average Response Time is the overall response time for a round-trip request, including the load time for HTML, XML, CSS, JavaScript files and images, among others.
+It may also include maximum response time showing how long a user waits for the server to respond to a request.
+
+2) Response Time Test has two most essential characteristic:
+
+Average response time.
+Maximum response time.
+It shows how long a user needs to wait for the server to the response its request.
+
+3)error can be calucluted by Rate limits. rate limits are calculated in Requests Per Second, or RPS. For example, let's say a developer only wants to allow a client to call the API a maximum of 10 times per minute.
+In this case the developer would apply a rate limit to their API expressed as “10 requests per 60 seconds”.
